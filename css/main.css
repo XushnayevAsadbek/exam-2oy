@@ -1,7 +1,32 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Light.woff2") format("woff2"), url("../font/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Regular.woff2") format("woff2"), url("../font/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Bold.woff2") format("woff2"), url("../font/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Poppins";
 }
 
 ul {
@@ -70,6 +95,13 @@ a {
 .header-box__burger {
   display: none;
 }
+.header-box .js-menu-burger {
+  display: none;
+}
+
+.sitenav {
+  display: none;
+}
 
 @media (max-width: 376px) {
   .header-box {
@@ -96,8 +128,8 @@ a {
     border: none;
     border-radius: none;
   }
-  .js-menu-burger {
-    background-color: none;
+  .header-box .js-menu-burger {
+    display: block;
   }
   .hidden-header {
     position: fixed;
@@ -113,6 +145,9 @@ a {
   }
   .hidden-header.show-header {
     transform: translateX(0%);
+  }
+  .sitenav {
+    display: block;
   }
   .sitenav__link {
     font-style: normal;

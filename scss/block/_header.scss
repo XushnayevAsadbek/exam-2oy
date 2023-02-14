@@ -62,8 +62,15 @@
         display: none;
     }
 
+   
+    .js-menu-burger{
+     display: none;
+    }
 
 }
+ .sitenav{
+      display: none;
+    }
 
 @media(max-width:$maxWidth) {
 
@@ -103,12 +110,11 @@
             
         }
 
+        .js-menu-burger{
+            display: block;
+        }
 
     }
-    .js-menu-burger{
-        background-color: none;
-    }
-
 
     .hidden-header {
         position: fixed;
@@ -127,6 +133,10 @@
         transform: translateX(0%);
     }
 
+   
+    .sitenav{
+        display: block;
+    }
     .sitenav__link {
         font-style: normal;
         font-weight: 600;
