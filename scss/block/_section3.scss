@@ -1,0 +1,83 @@
+.service-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+
+
+    &__heading4-1{
+        @include heading4();
+        padding-top: 172px;
+        margin-bottom: 8px;
+    }
+    &__heading2{
+        @include heading2();
+
+    }
+    &__heading4{
+        @include heading4();
+        margin-top: 131px
+    }
+    &__text{
+        @include text2();
+        margin: 12px 0 25px 0;
+    }
+    &__heading4-2{
+        @include heading4();
+
+    }
+
+    &__img{
+        padding-top: 153px;
+    }
+
+    &__text1{
+        margin: 30px 0 30px 0 ;
+        @include text2();
+        margin-left:60px;
+    }
+
+    &__text1::before{
+        content: url(../../img/section3-icon1.png);
+        position: relative;
+       top: 18px;
+       right: 30px;
+    }
+     &__text2{
+        @include text2();
+        margin-left:  60px; 
+    }
+
+    &__text2::before{
+        content: url(../../img/section3-icon2.png);
+        position: relative;
+        top: 20px;
+       right: 30px;
+    }
+   
+    &__text3{
+            margin-top: 30px ;
+            @include text2();
+            margin-left:60px;
+        }
+   
+    &__text3::before{
+        content: url(../../img/section3-icon3.png);
+        position: relative;
+       top: 20px;
+       right: 30px;
+         
+    }
+
+    &__text-bir{
+        @include text2();
+        
+    }
+    &__heading4-bir{
+        @include heading4();
+        margin: 30px 0 12px 0;
+    }
+   
+ }
+.wrap{
+    flex-direction: row-reverse;
+}

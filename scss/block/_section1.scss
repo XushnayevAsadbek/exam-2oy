@@ -1,0 +1,42 @@
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 33px;
+
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        color: $heading-color;
+        padding-top: 149px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $heading-color;
+        margin: 18px 0 45px 0;
+    }
+
+    &__btn {
+        @include button();
+        
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: #02897A;
+        margin-left: 30px;
+    }
+
+    &__img{
+        padding-top: 25px;
+    }
+}

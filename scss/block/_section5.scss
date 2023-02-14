@@ -1,0 +1,57 @@
+
+.section5-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    color: $heading-color;
+    padding-top: 150px;
+    margin-bottom: 8px;
+}
+
+.section5-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $heading-color;
+}
+
+.section5-box {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 32px;
+    margin-top: 32px;
+
+
+    &-card {
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
+
+    &__text {
+        @include grid();
+        padding-left: 24px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    &__heading{
+        @include gridCard();
+        padding: 0 30px 40px 24px;
+    }
+    
+}
+.active{
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 40px;
+color: #02897A;
+}
+
+.section5-icon{
+    margin-top: 64px;
+    margin-left: 480px;
+    margin-bottom: 20px;
+}
