@@ -39,3 +39,44 @@
         cursor: pointer;
     }
 }
+
+@media(max-width:$maxWidth){
+    .section8-box {
+        display: block;
+        background: #02897A;
+        border-radius: 32px;
+        margin: 0;
+
+        &__heading {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 151.4%;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 17px 21px 0 22px ;
+            margin: 0;
+        }
+    
+        &__heading1 {
+           display: none;
+        }
+    
+        &__btn {
+            background: #FFFFFF;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            border: none;
+            color: #02897A;
+            padding: 10px 34px ;
+            margin: 104px 0 42px 80px;
+            cursor: pointer;
+        }
+        &__img{
+            width: 351px;
+        }
+    }
+}

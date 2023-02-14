@@ -77,3 +77,84 @@
     }
 
 }
+
+@media(max-width:$maxWidth){
+    .section7-heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        color: $heading-color;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    
+    .section7-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $heading-color;
+        margin-bottom: 50px;
+    
+    }
+    
+    .section7-box {
+        display: block;
+        padding-bottom: 157px;
+    
+        &--card {
+            background: #FFFFFF;
+            border: 1px solid #DEDEDE;
+            border-radius: 5px;
+            margin-bottom: 32px;
+    
+            &__img {
+                margin: 28px 0 16px 28px;
+            }
+    
+            &__text {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: #737373;
+                padding: 0 26px;
+                margin-bottom: 16.5px;
+            }
+    
+            &-box {
+                display: flex;
+                gap: 14px;
+    
+                &__img {
+                    padding-left: 26px;
+                    padding-bottom: 23.65px;
+                }
+    
+                &__span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    color: #02897A;
+                }
+    
+                &__text {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    color: #252B42;
+                }
+            }
+        }
+    
+    }
+}
