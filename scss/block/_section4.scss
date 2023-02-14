@@ -82,3 +82,95 @@
     margin: 48px 0 0 420px;
 
 }
+
+@media(max-width:$maxWidth){
+    #section4 {
+        background-image: url("../../img/section4-bg-res.png");
+        background-repeat: no-repeat;
+        background-position: top ;
+        margin-top: 80px;
+    }
+    
+    
+    .section4-heading {
+        @include heading2();
+        text-align: center;
+        padding-top: 73px;
+    }
+    
+    .section4-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: $heading-color;
+        margin-top: 8px;
+    }
+    
+    .section4-box {
+        display: block;
+    
+    
+        &__card {
+            display: flex;
+    
+            &--text{
+                @include card();
+                padding: 15px 24px 14px 25px;
+                margin-top: 10px;
+                height: 60px;
+                margin-left: 16px;
+            }
+            &--img{
+                margin-top: 32px;
+            }
+    
+            &--text1{
+                @include card();
+                padding: 15px 18px 14px 22px ;
+                margin-top: 46px;
+                 height: 60px;
+                margin-right: 16px;
+            }
+    
+            &--img1{
+                margin-top: 32px;
+            }
+    
+            &--text2{
+                @include card();
+                padding: 15px 30.5px 14px 33.5px;
+                margin-top: 53px;
+                margin-right: 16px;
+                height: 53px;
+            }
+            &--img2{
+                margin-top: 24px;
+                
+            }
+            &--text3{
+                @include card();
+                padding: 14px 19px 15px 23px;
+                margin-top: 38px;
+                margin-left: 39px;
+                height: 53px;
+            }
+            &--img3{
+                margin-top: 24px;
+            }
+    
+        }
+    }
+
+    .section4--wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .section4--btn{
+        @include button();
+         margin: 48px 0 0 0;
+    
+    } 
+}

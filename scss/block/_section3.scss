@@ -88,3 +88,106 @@
 .wrap{
     flex-direction: row-reverse;
 }
+
+@media(max-width:$maxWidth){
+    .service-box{
+        display: block;
+        flex-direction: column-reverse;
+    
+    
+        &__heading4-1{
+            @include heading4();
+            margin-bottom: 8px;
+            padding-top: 50px;
+        }
+        &__heading2{
+            @include heading2();
+    
+        }
+        &__heading4{
+            @include heading4();
+            margin-top: 16px;
+        }
+        &__text{
+            @include text2();
+            margin: 12px 0 5px 0;
+        }
+        &__heading4-2{
+            @include heading4();
+    
+        }
+    
+        &__img{
+            padding-top: 0;
+            width: 349px;
+            padding-top: 95px;
+        }
+    
+        &__text1{
+            margin: 30px 0 30px 0 ;
+            @include text2();
+            margin-left:60px;
+            margin-right: 30px;
+        }
+    
+        &__text1::before{
+            content: url(../../img/section3-icon1.png);
+            position: relative;
+           top: 5px;
+           right: 30px;
+        }
+         &__text2{
+            @include text2();
+            margin-left:  60px; 
+        }
+    
+        &__text2::before{
+            content: url(../../img/section3-icon2.png);
+            position:relative;
+            top: 0;
+            right: 30px;
+        }
+        .service-box__matn{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+       
+        &__text3{
+                margin-top: 30px ;
+                @include text2();
+                margin-left:60px;
+                margin-right: 30px;
+            }
+       
+        &__text3::before{
+            content: url(../../img/section3-icon3.png);
+            position: relative;
+           top:0;
+           right: 30px;
+             
+        }
+    
+        &__text-bir{
+            @include text2();
+            
+        }
+        &__heading4-bir{
+            @include heading4();
+            margin: 30px 0 12px 0;
+        }
+       
+     }
+     .wrap1{
+        display: flex;
+        flex-direction: column-reverse;
+      } 
+  .wrap{
+    display: flex;
+    flex-direction: column-reverse;
+  }   
+  .wrap2{
+    display: flex;
+    flex-direction: column-reverse;
+  } 
+}

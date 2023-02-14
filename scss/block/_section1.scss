@@ -23,7 +23,7 @@
 
     &__btn {
         @include button();
-        
+
     }
 
     &__link {
@@ -36,7 +36,62 @@
         margin-left: 30px;
     }
 
-    &__img{
+    &__img {
         padding-top: 25px;
+    }
+}
+
+@media(max-width:$maxWidth) {
+    .hero-box {
+        display: block;
+
+
+        &__heading {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 60px;
+            text-align: center;
+            color: $heading-color;
+            margin-bottom: 16px;
+            margin-top: 10.7px;
+            padding-top: 0;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: $heading-color;
+            margin: 0  0 32px 0;
+        }
+
+        &__btn {
+            @include button();
+
+        }
+
+        &__link {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: #02897A;
+            margin-left: 30px;
+        }
+
+        
+
+        &__img {
+            max-width: 338px;
+            padding-top: 29.32px;
+        }
+    }
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }

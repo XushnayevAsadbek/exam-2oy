@@ -3,3 +3,10 @@
     margin: 0 auto ;
     padding: 0 15px ;
 }
+
+@media(max-width:$maxWidth){
+    .container{
+        width: 100%;
+        max-width: $maxWidth;
+    }
+}

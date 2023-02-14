@@ -63,3 +63,40 @@
 
 
 }
+
+@media(max-width:$maxWidth){
+   
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+    
+    
+        &__logo {
+            padding-top: 21px;
+       
+        }
+    
+    
+        &__item {
+            display: none;
+    
+           
+        }
+    
+        &__link1 {
+            display: none;
+        }
+       
+        &__link{
+            display: none;
+    
+        }
+    
+        &__burger{
+            display: block;
+            padding-top: 26.75px;
+        }
+    
+    
+    }
+}
