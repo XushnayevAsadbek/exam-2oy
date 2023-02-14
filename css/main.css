@@ -75,6 +75,7 @@ a {
   .header-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .header-box__logo {
     padding-top: 21px;
@@ -89,8 +90,55 @@ a {
     display: none;
   }
   .header-box__burger {
+    color: #173A56;
     display: block;
-    padding-top: 26.75px;
+    background: #fff;
+    border: none;
+    border-radius: none;
+  }
+  .js-menu-burger {
+    background-color: none;
+  }
+  .hidden-header {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 40px;
+    text-align: center;
+    background: #02897A;
+    transform: translateX(150%);
+    transition: transform 1s ease;
+  }
+  .hidden-header.show-header {
+    transform: translateX(0%);
+  }
+  .sitenav__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #22343D;
+  }
+  .sitenav__item1 {
+    margin-top: 20px;
+  }
+  .sitenav__link1 {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 10px 22px 9px 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173A56;
+  }
+  .sitenav__link1:hover {
+    background-color: #fff;
+  }
+  .sitenav__item2 {
+    margin-top: 15px;
   }
 }
 .hero-box {
@@ -625,7 +673,7 @@ a {
   line-height: 24px;
   color: #2F281E;
   padding: 15px 30.5px 14px 33.5px;
-  margin-top: 53px;
+  margin-top: 38px;
   margin-right: 16px;
   height: 53px;
 }
@@ -643,7 +691,7 @@ a {
   color: #2F281E;
   padding: 14px 19px 15px 23px;
   margin-top: 38px;
-  margin-left: 39px;
+  margin-left: 16px;
   height: 53px;
 }
 .section4-box__card--img3 {
@@ -722,7 +770,7 @@ a {
     line-height: 24px;
     color: #2F281E;
     padding: 15px 18px 14px 22px;
-    margin-top: 46px;
+    margin-top: 44.57px;
     height: 60px;
     margin-right: 16px;
   }
@@ -755,15 +803,16 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: #2F281E;
-    padding: 14px 19px 15px 23px;
+    padding: 12px 16.66px 5.6px 19.56px;
     margin-top: 45.5px;
-    margin-left: 39px;
+    margin-left: 14.45px;
     height: 60px;
+    text-align: center;
   }
   .section4-box__card--img3 {
-    margin-top: 24px;
+    margin-top: 32px;
   }
-  .section4--wrap {
+  .section4-wrap {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -778,7 +827,7 @@ a {
     padding: 15px 41px 14px 41px;
     border: none;
     cursor: pointer;
-    margin: 32px 0 0 15px;
+    margin: 32px 0 0 50px;
   }
 }
 .section5-heading {
@@ -852,7 +901,7 @@ a {
     font-size: 34px;
     line-height: 51px;
     color: #22343D;
-    padding-top: 150px;
+    padding-top: 100px;
     margin-bottom: 8px;
   }
   .section5-text {
@@ -977,7 +1026,7 @@ a {
   line-height: 30px;
   letter-spacing: 0.1px;
   color: #02897A;
-  padding-top: 40px;
+  padding-top: 25px;
   margin-bottom: 4px;
 }
 .section6-box--card-wrapper--text {
@@ -1106,7 +1155,7 @@ a {
     line-height: 30px;
     letter-spacing: 0.1px;
     color: #02897A;
-    padding-top: 40px;
+    margin-top: -17px;
     margin-bottom: 4px;
   }
   .section6-box--card-wrapper--text {

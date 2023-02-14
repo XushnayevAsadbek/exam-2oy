@@ -1,4 +1,3 @@
-
 .header-box {
     display: flex;
     justify-content: space-between;
@@ -6,20 +5,20 @@
 
     &__logo {
         padding-top: 23px;
-   
+
     }
 
 
     &__item {
         display: flex;
         align-items: center;
-       
+
         gap: 24px;
 
 
         &--list {
             padding-top: 26px;
-          
+
         }
 
         &--link {
@@ -38,7 +37,7 @@
     }
 
     &__link1 {
-        border:$border;
+        border: $border;
         border-radius: 4px;
         padding: 10px 22px 9px 25px;
         margin-top: 19px;
@@ -48,55 +47,112 @@
         line-height: 24px;
         color: #173A56;
     }
-    &__link1:hover{
+
+    &__link1:hover {
         color: $text-color;
         background-color: $button-color;
     }
-    &__link{
+
+    &__link {
         padding-top: 19px;
 
     }
 
-    &__burger{
+    &__burger {
         display: none;
     }
 
 
 }
 
-@media(max-width:$maxWidth){
-   
+@media(max-width:$maxWidth) {
+
     .header-box {
         display: flex;
         justify-content: space-between;
-    
-    
+        align-items: center;
+
+
         &__logo {
             padding-top: 21px;
-       
+
         }
-    
-    
+
+
         &__item {
             display: none;
-    
-           
+
+
         }
-    
+
         &__link1 {
             display: none;
         }
-       
-        &__link{
+
+        &__link {
             display: none;
-    
+
         }
-    
-        &__burger{
+
+        &__burger {
+            color:#173A56 ;
             display: block;
-            padding-top: 26.75px;
+            background: #fff;
+            border: none ;
+            border-radius: none ;
+            
         }
-    
-    
+
+
+    }
+    .js-menu-burger{
+        background-color: none;
+    }
+
+
+    .hidden-header {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 40px;
+        text-align: center;
+        background: #02897A;
+        transform: translateX(150%);
+        transition: transform 1s ease;
+    }
+
+    .hidden-header.show-header {
+        transform: translateX(0%);
+    }
+
+    .sitenav__link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #22343D;
+    }
+
+    .sitenav__item1{
+        margin-top: 20px;
+    }
+    .sitenav__link1{
+        border: $border;
+        border-radius: 4px;
+        padding: 10px 22px 9px 25px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #173A56;
+    }
+    .sitenav__link1:hover{
+        background-color: #fff;
+
+    }
+    .sitenav__item2{
+        margin-top: 15px;
     }
 }

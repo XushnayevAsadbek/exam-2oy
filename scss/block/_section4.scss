@@ -55,7 +55,7 @@
         &--text2{
             @include card();
             padding: 15px 30.5px 14px 33.5px;
-            margin-top: 53px;
+            margin-top: 38px;
             margin-right: 16px;
             height: 53px;
         }
@@ -67,7 +67,7 @@
             @include card();
             padding: 14px 19px 15px 23px;
             margin-top: 38px;
-            margin-left: 39px;
+            margin-left: 16px;
             height: 53px;
         }
         &--img3{
@@ -129,7 +129,7 @@
             &--text1{
                 @include card();
                 padding: 15px 18px 14px 22px ;
-                margin-top: 46px;
+                margin-top: 44.57px;
                  height: 60px;
                 margin-right: 16px;
             }
@@ -151,26 +151,26 @@
             }
             &--text3{
                 @include card();
-                padding: 14px 19px 15px 23px;
+                padding: 12px 16.66px 5.6px 19.56px;
                 margin-top: 45.5px;
-                margin-left: 39px;
+                margin-left: 14.45px;
                 height: 60px;
+                text-align: center;
             }
             &--img3{
-                margin-top: 24px;
+                margin-top: 32px;
             }
     
         }
     }
-
-    .section4--wrap{
+    .section4-wrap{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
     
     .section4--btn{
         @include button();
-         margin: 32px 0 0 15px;
+         margin: 32px 0 0 50px;
     
     } 
 }
