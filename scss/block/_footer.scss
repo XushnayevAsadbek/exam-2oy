@@ -1,0 +1,78 @@
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 153px;
+
+    &__icon {
+        margin-top: 28px;
+        margin-right: 16px;
+    }
+
+    &__item {
+
+        &--list {
+            margin-bottom: 8px;
+        }
+
+        &--link1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #22343D;
+        }
+
+        &--link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 35px;
+            color: $heading-color;
+
+        }
+
+
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $heading-color;
+        margin-bottom: 34px;
+    }
+
+    &__input {
+        margin-bottom: 21px;
+        background: #FFFFFF;
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        padding: 10px 0 10px 15px;
+    }
+
+    &__btn {
+        background: #02897A;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        padding: 8px 15px 7px 15px;
+        cursor: pointer;
+    }
+}
+
+.footer-text{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: $heading-color;
+text-align: center;
+margin-top: 16px;
+padding-bottom: 46px;
+}
